@@ -1,0 +1,144 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Kumbh Sans", sans-serif;
+  color: #444;
+  background: linear-gradient(to bottom, #af67e9, #6565e7);
+  /* height: 100vh; */
+  padding: 2rem;
+  z-index: 0;
+}
+
+.accordion {
+  background-color: white;
+
+  margin-top: 25%;
+  margin-bottom: 4rem;
+  border-radius: 2rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.picture-part {
+  flex: 0 0 20%;
+  transform: translateY(-90px);
+  position: relative;
+}
+
+.illustration-image {
+  display: block;
+  text-align: center;
+  background-image: url("/images/bg-pattern-mobile.svg");
+  background-position: bottom;
+  background-repeat: no-repeat;
+}
+
+.illustration-img-class {
+  transform: translateX(-15px) translateY(-15px);
+}
+
+.box-image {
+  display: none;
+}
+
+.faq-part {
+  flex: 0 0 80%;
+  padding: 2rem;
+  margin-top: -12rem;
+}
+
+.heading-1 {
+  font-size: 3.5rem;
+  font-weight: 700;
+  padding: 2.5rem 0;
+  text-align: center;
+}
+
+.question {
+  display: flex;
+  font-size: 1.2rem;
+  font-weight: 400;
+  border-bottom: 2px solid hsl(240, 5%, 91%);
+}
+
+.qn {
+  padding: 1.5rem 0;
+  text-decoration: none;
+  cursor: pointer;
+  color: hsl(237, 12%, 33%);
+  flex: 0 0 90%;
+}
+
+.qn:hover,
+.qn:active {
+  color: hsl(14, 88%, 65%);
+}
+
+.arrow-img {
+  transform: scale(0.2) translateY(5px);
+  align-self: center;
+  flex: 0 0 10%;
+}
+
+.arrow-on-click {
+  transform: scale(-0.3);
+}
+.answer {
+  font-size: 1.1rem;
+  padding: 0;
+  padding-bottom: 1.5rem;
+  color: hsl(240, 6%, 50%);
+  display: none;
+  border-bottom: 2px solid hsl(240, 5%, 91%);
+}
+
+@media screen and (min-width: 75em) {
+  .accordion {
+    flex-direction: row;
+    margin: 10%;
+    margin-bottom: 4rem;
+  }
+
+  .picture-part {
+    flex: 0 0 50%;
+    transform: none;
+  }
+
+  .faq-part {
+    margin-top: 0;
+    align-self: stretch;
+    flex: 0 0 50%;
+  }
+  .illustration-image {
+    background-image: url("/images/bg-pattern-desktop.svg");
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    background-position-x: -52rem;
+    background-position-y: -30rem;
+    overflow: hidden;
+    background-repeat: no-repeat;
+  }
+
+  .box-image {
+    position: absolute;
+    bottom: 11rem;
+    left: -3rem;
+    z-index: 1000;
+    display: inline;
+  }
+}
+
+@media screen and (min-width: 90em) {
+  .accordion {
+    margin: 10% 15%;
+  }
+}
