@@ -91,11 +91,6 @@ To make the arrows turn upside down on clicking,
 }
 ```
 
-```js
-const proudOfThisFunc = () => {
-  console.log("🎉");
-};
-```
 
 ### Continued development
 
