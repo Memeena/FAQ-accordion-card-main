@@ -37,7 +37,7 @@ body {
 .illustration-image {
   display: block;
   text-align: center;
-  background-image: url("/images/bg-pattern-mobile.svg");
+  background-image: url("images/bg-pattern-mobile.svg");
   background-position: bottom;
   background-repeat: no-repeat;
 }
