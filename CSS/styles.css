@@ -122,16 +122,20 @@ body {
     background-image: url("../images/bg-pattern-desktop.svg");
     padding-top: 5rem;
     padding-bottom: 5rem;
-    background-position-x: -52rem;
+    background-position-x: -58rem;
     background-position-y: -30rem;
     overflow: hidden;
     background-repeat: no-repeat;
+  }
+  
+  .illustration-img-class {
+    transform: translateX(-100px) translateY(-15px);
   }
 
   .box-image {
     position: absolute;
     bottom: 11rem;
-    left: -3rem;
+    left: -10rem;
     z-index: 1000;
     display: inline;
   }
